@@ -15,3 +15,4 @@ case $basedpkg in
         echo "not yet available you can install pfetch instead"
         ;;
 esac
+#TODOO add a remove pkg option
