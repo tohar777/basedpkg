@@ -5,6 +5,7 @@ read -p "what package would you like to install ?: " basedpkg
 # feel free to add your own repos as pkgbases 
 case $basedpkg in
     pfetch)
+	cd ~
         git clone https://github.com/dylanaraps/pfetch.git
 	sudo install pfetch/pfetch /usr/local/bin/
 	ls -l /usr/local/bin/pfetch
