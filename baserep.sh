@@ -11,8 +11,13 @@ case $basedpkg in
 	ls -l /usr/local/bin/pfetch
 	pfetch
         ;;
-    ufetch)
-        echo "not yet available you can install pfetch instead"
+    cowsay)
+	wget https://github.com/tnalpgge/rank-amateur-cowsay/archive/master.zip
+	unzip master.zip
+	cd rank-amateur-cowsay-master
+	./install.sh /usr/local
+
+        
         ;;
 esac
 #TODOO add a remove pkg option
